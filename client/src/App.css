@@ -1,0 +1,13 @@
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+.NotFound {
+  background: url("./img/rocky-shore.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  height: 100vh;
+  width: auto;
+}

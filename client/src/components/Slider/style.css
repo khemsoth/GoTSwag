@@ -1,0 +1,185 @@
+@font-face{
+    font-family: "gotFont";
+    src: url("../../../src/font/thrones.ttf")format("truetype");
+}
+body {
+  font-family: "gotFont";
+  box-sizing: border-box;
+  
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.slider-div {
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+ 
+}
+
+.slide {
+  height: 100%;
+  max-width: 100%;
+  background-size: cover !important;
+}
+
+.slide::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(transparent),
+    to(rgba(0, 0, 0, 0.9))
+  );
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  bottom: 0;
+  left: 0;
+}
+
+.previousButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: url("http://clipart-library.com/img1/1476510.png") no-repeat center center /
+    24px;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+
+.previousButton {
+  left: 0;
+  -webkit-transform: rotate(180deg) translateY(calc(50% + 0px));
+  transform: rotate(180deg) translateY(calc(50% + 0px));
+}
+
+/* .previousButton:hover {
+  left: -10px;
+} */
+
+.nextButton {
+  right: 0;
+}
+
+/* .nextButton:hover {
+  right: -10px;
+} */
+
+.slider-content {
+  text-align: center;
+}
+
+.slider-content .inner {
+  padding: 0 70px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.slider-content * {
+  pointer-events: none;
+}
+
+.slider-content .inner button {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.slider-content .inner h1 {
+  font-weight: 800;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 5rem;
+}
+
+.slider-content .inner p {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin: 20px auto 30px;
+}
+
+
+@media (max-height: 500px) {
+  .slider-wrapper,
+  .slide {
+    height: calc(100vh - 75px);
+  }
+
+}
+
+@media (max-width: 640px) {
+  .slider-wrapper,
+  .slide {
+    /* height: calc(80vh - 75px); */
+    height: 100vh;
+  }
+  
+  .slider-content .inner h1 {
+    font-weight: 800;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 3rem;
+  }
+
+  .slider-content .inner p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 20px auto 30px;
+  }
+
+  .slider-wrapper{
+    margin-top:0;
+  }
+}
+
+@media screen and (orientation:landscape) {
+  .slider-wrapper,
+  .slide {
+    /* height: calc(80vh - 75px); */
+    height: 100vh;
+  }
+
+  .slider-content .inner h1 {
+    font-weight: 800;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 2.5rem;
+  }
+
+  .slider-content .inner p {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 20px auto 30px;
+  }
+
+  .slider-wrapper{
+    margin-top:0;
+  }
+
+}

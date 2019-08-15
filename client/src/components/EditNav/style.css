@@ -1,0 +1,33 @@
+nav.navbar {
+    margin: 0%;
+    width: 100vw;
+    }
+  
+nav#edit-nav {
+    margin-bottom: 2rem;
+}
+  
+
+@media screen and (orientation:landscape) {
+    nav#edit-nav {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (device-width : 812px) and (device-height: 375px){ 
+    nav#edit-nav {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (device-width : 823px) and (device-height: 411px){ 
+    nav#edit-nav {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (device-width : 568px) and (device-height: 320px){
+    nav#edit-nav {
+        margin-bottom: 2.5rem;
+    } 
+}

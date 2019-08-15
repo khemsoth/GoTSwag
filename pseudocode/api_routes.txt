@@ -1,0 +1,79 @@
+1) Get route for logging in.
+
+   
+
+
+
+	Looks for user row in users table where username and password column values match username and password that are queried for.
+
+   
+
+
+
+	If username/password are found:
+
+   	
+
+
+
+	All data from that row is returned.
+
+   
+
+
+
+	Else, error is caught.
+
+"select * from Users where username = "queried value" and password = "queried value";"
+
+
+
+
+
+
+2) Put route for updating user row with all values at once.
+
+   
+
+	
+
+if queried username exists in user table:
+
+   	
+
+	
+
+Updates purchased quantity for purchased item where username of query equals username in users table.
+
+   
+
+	
+
+else, error is caught.
+
+	
+
+
+
+UPDATE Users
+SET "swagquantity" = "queried value"
+WHERE username = "queried username";
+
+
+
+
+
+3) Post route for registration of new user.
+
+   
+
+	
+
+When user enters new values for new user,
+
+   
+
+	
+
+New row is created with proper values in users table.
+

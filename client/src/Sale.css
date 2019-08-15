@@ -1,0 +1,12 @@
+@font-face{
+    font-family: "gotFont";
+    src: url("./font/thrones.ttf")format("truetype");
+}
+
+.sale-banner-title {
+    font-family: "gotFont";
+    font-size: 4rem;
+    color: rgb(137,40,51);
+    padding: 1rem;
+    font-weight: 900;
+}

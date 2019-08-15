@@ -1,0 +1,21 @@
+@font-face  {
+  font-family: GOTFont;
+  src: url("../css/Game\ of\ Thrones.ttf");
+}
+
+body {
+  background-image: url('../img/rocky-shore.jpg');
+  font-family: GOTFont;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #111;
+}
+
+.container {
+  background-color: rgba(255,255,255,.7);
+  padding: .5rem;
+}
+
+
+

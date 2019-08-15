@@ -1,0 +1,8 @@
+@font-face{
+  font-family: "gotFont";
+  src: url("./font/thrones.ttf")format("truetype");
+}
+
+#orders-body {
+  overflow-x: hidden;
+}

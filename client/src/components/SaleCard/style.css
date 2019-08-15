@@ -1,0 +1,56 @@
+.sale-body {
+    background: url("/images/gotmap.jpg");
+    text-align: center;
+}
+
+.sale-container {
+    padding-bottom:20px;
+}
+
+.card {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.card-image{
+    margin: 0 auto;
+    height: 100px;
+    width: 80px;
+}
+
+.card-title {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card-price {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.card-desc {
+    font-size: .75rem;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.card-btn {
+    margin: 2rem auto;
+    text-align: center;
+
+}
+
+@media (min-width:768px){
+
+    .card-desc {
+        font-size: 1.25rem;
+    }
+
+
+}
+
+@media screen and (orientation:landscape) {
+    .card-desc {
+        font-size: .75rem
+    }
+}

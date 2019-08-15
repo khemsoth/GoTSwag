@@ -1,0 +1,45 @@
+.card-image{
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+}
+
+.card-title {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card-price {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.card-desc {
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.card-btn {
+    margin: 2rem auto;
+    text-align: center;
+
+}
+
+.order-wrap {
+    text-align: center;
+}
+
+.q  {
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.container  {
+    padding-top: 75px;
+    padding-bottom: 1000px;
+}
+
+.card {
+    margin: 0 auto;
+}
+
